@@ -161,5 +161,55 @@ https://etherscan.io/address/0x52a5e1a56a124dce84e548ff96122246e46d599f#code
 
 ```
 
+### ALEX (ALEX)
+
+
+https://etherscan.io/address/0x04ed15fa8c47778589c1bf3451e0de25c1eed3ae#code
+```
+    function mintToken(address target, uint256 mintedAmount) onlyOwner {
+        balanceOf[target] += mintedAmount;
+        totalSupply += mintedAmount;
+        Transfer(0, owner, mintedAmount);
+        Transfer(owner, target, mintedAmount);
+    }
+```
+
+
+
+
+### Ethernet Cash (ENC)
+
+https://etherscan.io/address/0x039f5050de4908f9b5ddf40a4f3aa3f329086387#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+        balanceOf[target] += mintedAmount;
+        totalSupply += mintedAmount;
+        Transfer(0, this, mintedAmount);
+        Transfer(this, target, mintedAmount);
+    }
+```
+
+
+### EPPCOIN (EPP)
+
+https://etherscan.io/address/0x759981e5af7661836d305f71779690808c1de51f#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+        balanceOf[target] += mintedAmount;
+        totalSupply += mintedAmount;
+        Transfer(0, this, mintedAmount);
+        Transfer(this, target, mintedAmount);
+    }
+```
+
+
 
 ##### ...

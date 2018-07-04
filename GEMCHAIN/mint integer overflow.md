@@ -47,6 +47,7 @@ This is a serious problem for digital assets.
 
 Other tokens found vulnerable by us are listed below. These ones have a similar code pattern.
 
+<<<<<<< HEAD
 ##### DCoin
 https://etherscan.io/address/0x4f083c2f2d8f9b6702fe89117961f34d12ae1787#code
 ```javascript
@@ -176,10 +177,27 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner {
 https://etherscan.io/address/0xb57aff26bbb822c06e81f194ec5ca29319d6d7b4#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+=======
+
+
+
+
+### bonusToken
+
+https://etherscan.io/address/0x362dcc7187cf0c47be45695549c6b4fb96c08875#code
+
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, this, mintedAmount);
         Transfer(this, target, mintedAmount);
+<<<<<<< HEAD
 
     }
 ```
@@ -246,12 +264,29 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner public {
 https://etherscan.io/address/0x0a9Aa2003215BfBc6caf9a49256e9F4EC42b3c3D#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+=======
+    }
+```
+
+
+
+### CryptonitexCoin
+
+https://etherscan.io/address/0x2c0c06dae6bc7d7d7d8b0d67a1f1a47d6165e373#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, this, mintedAmount);
         Transfer(this, target, mintedAmount);
     }
 ```
+<<<<<<< HEAD
 
 ##### ECPoints
 https://etherscan.io/address/0x03271480700a7e3BDE7801c03Ab33D3834806f0B#code
@@ -335,11 +370,37 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner public {
 https://etherscan.io/address/0x54920ecbaadb81cfcd12cf3f8d971686fe95b269#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner {
+=======
+ 
+ 
+
+### AssetToken
+
+https://etherscan.io/address/0x0bdbc0748ba09fbe9e9ed5938532e41446c2f033#code
+
+```
+	function mintToken(address target, uint256 mintedAmount) onlyAdmin{
+		balanceOf[target] += mintedAmount;
+		totalSupply += mintedAmount;
+		Transfer(0, this, mintedAmount);
+		Transfer(this, target, mintedAmount);
+	}
+```
+
+### bankcoin
+
+https://etherscan.io/address/0xf3836bc7415dfb67b4bf8427e37705b1a81e1173#code
+
+
+```
+	function mintToken(address target, uint256 mintedAmount) onlyOwner {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
 		balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, owner, mintedAmount);
         Transfer(owner, target, mintedAmount);
     }
+<<<<<<< HEAD
 ```
 
 ##### UNLB
@@ -460,11 +521,54 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner {
 https://etherscan.io/address/0x125c0260feec92471d1a144f3cdce185a565f374#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner {
+=======
+
+  ```
+### AssetToken
+
+https://etherscan.io/address/0x6248211b830ce0191c7643b19f5ddb059e018672#code
+
+
+```
+	function mintToken(address target, uint256 mintedAmount) onlyAdmin{
+		balanceOf[target] += mintedAmount;
+		totalSupply += mintedAmount;
+		Transfer(0, this, mintedAmount);
+		Transfer(this, target, mintedAmount);
+	}
+
+```
+### etktokens
+
+https://etherscan.io/address/0xce58d27fd266e63c4055ce1b77c6fd6e0a74190b#code
+
+
+```
+	function mintToken(address target, uint256 mintedAmount) onlyOwner {
+		balanceOf[target] += mintedAmount;
+        totalSupply += mintedAmount;
+        Transfer(0, owner, mintedAmount);
+        Transfer(owner, target, mintedAmount);
+    }
+```
+
+
+### MultiGamesToken
+
+https://etherscan.io/address/0x52a5e1a56a124dce84e548ff96122246e46d599f#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, this, mintedAmount);
         Transfer(this, target, mintedAmount);
     }
+<<<<<<< HEAD
 ```
 
 ##### t_swap
@@ -516,12 +620,25 @@ https://etherscan.io/address/0x1b09cd594ddeaa336564dd24fe6ef43688f27c62#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner {
 		balanceOf[target] += mintedAmount;
+=======
+
+```
+
+### ALEX (ALEX)
+
+
+https://etherscan.io/address/0x04ed15fa8c47778589c1bf3451e0de25c1eed3ae#code
+```
+    function mintToken(address target, uint256 mintedAmount) onlyOwner {
+        balanceOf[target] += mintedAmount;
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         totalSupply += mintedAmount;
         Transfer(0, owner, mintedAmount);
         Transfer(owner, target, mintedAmount);
     }
 ```
 
+<<<<<<< HEAD
 ##### BeyondCashToken
 https://etherscan.io/address/0x8d15798fc8e90f490daa4e4b53d30ffed2162c63#code
 ```javascript
@@ -603,6 +720,20 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner public {
 https://etherscan.io/address/0x0a284444a2787483add9b81fa825030d53916f5a#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+=======
+
+
+
+### Ethernet Cash (ENC)
+
+https://etherscan.io/address/0x039f5050de4908f9b5ddf40a4f3aa3f329086387#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, this, mintedAmount);
@@ -610,6 +741,7 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner public {
     }
 ```
 
+<<<<<<< HEAD
 ##### CTESale
 https://etherscan.io/address/0xa6ba0aa61ccd254fd92d548dfe87d06533649c12#code
 ```javascript
@@ -672,6 +804,18 @@ function mintToken(address _target, uint256 _amount) public onlyOwner {
 https://etherscan.io/address/0xde0df6633389e6ba997c6db843c5d4dd3f378b6f#code
 ```javascript
 function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+=======
+
+### EPPCOIN (EPP)
+
+https://etherscan.io/address/0x759981e5af7661836d305f71779690808c1de51f#code
+
+```
+    /// @notice Create `mintedAmount` tokens and send it to `target`
+    /// @param target Address to receive the tokens
+    /// @param mintedAmount the amount of tokens it will receive
+    function mintToken(address target, uint256 mintedAmount) onlyOwner public {
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
         balanceOf[target] += mintedAmount;
         totalSupply += mintedAmount;
         Transfer(0, this, mintedAmount);
@@ -679,6 +823,7 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner public {
     }
 ```
 
+<<<<<<< HEAD
 ##### CBRToken
 https://etherscan.io/address/0x7e750348983e17267dfbe939dfa008b25fd07459#code
 ```javascript
@@ -4110,3 +4255,8 @@ function mintToken(address target, uint256 mintedAmount) onlyOwner {
         Transfer(this, target, mintedAmount);
     }
 ```
+=======
+
+
+##### ...
+>>>>>>> daa2addb66588497099e259689ba55d8fcc32b5f
